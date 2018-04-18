@@ -2,7 +2,7 @@
 
 namespace SimBioT1954\Vk;
 
-use SimBioT1954\Vk\Vk as VkApi;
+use SimBioT1954\Vk\Client as VkApi;
 use SimBioT1954\Vk\VkResponse as ApiResponse;
 use Phalcon\Config;
 
