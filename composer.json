@@ -1,11 +1,12 @@
 {
-    "name": "simbiot1954/Vk",
-    "description": "A vk.com simple client in PHP",
-    "type": "library",
-    "minimum-stability": "dev",
-    "autoload": {
-        "psr-0": {
-            "SimBioT1954\\Vk": "src"
-        }
+  "name": "simbiot1954/vk",
+  "description": "A vk.com simple client in PHP",
+  "type": "library",
+  "license": "proprietary",
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-0": {
+      "SimBioT1954\\Vk": "src"
     }
+  }
 }
