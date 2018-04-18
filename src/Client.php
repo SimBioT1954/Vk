@@ -3,10 +3,10 @@
 namespace SimBioT1954\Vk;
 
 /**
- * Class Vk
+ * Class Client
  * @package SimBioT1954\Vk
  */
-class Vk
+class Client
 {
     public const API_VERSION = '5.74';
 
@@ -17,7 +17,7 @@ class Vk
     private $ch;
 
     /**
-     * Vk constructor.
+     * Client constructor.
      */
     public function __construct ()
     {
