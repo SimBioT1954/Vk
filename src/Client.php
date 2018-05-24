@@ -8,7 +8,7 @@ namespace SimBioT1954\Vk;
  */
 class Client
 {
-    public const API_VERSION = '5.74';
+    public static $API_VERSION = '5.77';
 
     /**
      * Curl instance.
@@ -22,6 +22,14 @@ class Client
     public function __construct ()
     {
         $this->ch = curl_init();
+    }
+
+    /**
+     * @param string $version
+     */
+    public static function setApiVersion (string $version):void
+    {
+        self::$API_VERSION = $version;
     }
 
     /**
@@ -40,7 +48,7 @@ class Client
      */
     public function api (string $method, array $parameters = []): VkResponse
     {
-        $parameters['v'] = self::API_VERSION;
+        $parameters['v'] = self::$API_VERSION;
 
         $api_url = $this->getApiUrl($method);
         $response = $this->request($api_url, $parameters);
