@@ -67,7 +67,7 @@ class OauthManager
             '&scope=stories,manage,messages,photos,docs' .
             '&redirect_uri=' . $this->getUrl($config, self::GROUP_REDIRECT_URL) .
             '&group_ids=' . implode(',', $group_ids) .
-            '&response_type=code&v=' . VkApi::API_VERSION;
+            '&response_type=code&v=' . VkApi::$API_VERSION;
     }
 
     /**
